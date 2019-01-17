@@ -8,6 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Veggi One Page Restorent Template</title>
+
     <link rel="stylesheet" href="veggi-one-page-restorent-template/css/font-awesome/css/font-awesome.min.css" />
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700,300italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="veggi-one-page-restorent-template/css/bootstrap/bootstrap.min.css" />
@@ -21,9 +22,11 @@
 
     <link rel="stylesheet" href="veggi-one-page-restorent-template/css/style.css" />
     <link rel="stylesheet" href="veggi-one-page-restorent-template/css/responsive.css" />
-  <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
 </head>
 <body>
+<div class='preloader'><div class='loaded'>&nbsp;</div></div>
 
 <header id="home" class="header">
     <div class="main_menu_bg navbar-fixed-top wow slideInDown" data-wow-duration="1s">
@@ -66,7 +69,36 @@
 </header> <!--End of header -->
 
 
-        <div ng-view>
+<section id="banner" class="banner">
+    <div class="container">
+        <div class="row">
+            <div class="main_banner_area text-center">
+                <div class="col-md-5 col-sm-5 col-md-offset-7 col-sm-offset-7">
+                    <div class="single_banner_text wow zoomIn" data-wow-duration="1s">
+                        <p>Veggies es bonus vobis, proinde vos postulo essum.</p>
+
+                        <div class="separetor"></div>
+                    </div>
+                </div>
+
+
+                <div class="scrolldown">
+                    <a href="#special" class="scroll_btn"></a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section><!-- End of Banner Section -->
+
+<!-- STRAT SCROLL TO TOP -->
+
+<div class="scrollup">
+    <a href="#"><i class="fa fa-chevron-up"></i></a>
+</div>
+
+<div ng-view>
 
            </div>
 
@@ -85,6 +117,7 @@
 <script src="core/version/version.js"></script>
 <script src="core/version/version-directive.js"></script>
 <script src="core/version/interpolate-filter.js"></script>
+
 <script type="text/javascript" src="veggi-one-page-restorent-template/js/jquery/jquery.js"></script>
 
 
