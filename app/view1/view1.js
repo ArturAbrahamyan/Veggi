@@ -9,6 +9,7 @@ app.config(['$routeProvider', function($routeProvider) {
     controller: 'View1Ctrl'
 
   }).otherwise({redirectTo: '/view1'});
+  
 }]);
 
 app.controller('View1Ctrl', function($scope) {
